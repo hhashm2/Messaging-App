@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane fx:id="serverbp" prefHeight="600.0" prefWidth="600.0" style="-fx-background-size: 600; -fx-font-family: SansSerif; -fx-background-color: #fcfcf1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SController">
+   <top>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="177.0" prefWidth="400.0" text="Server" textAlignment="CENTER" translateY="-20.0" underline="true" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="SansSerif Bold" size="34.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.38954869358669836" startY="0.2375296912114014">
+               <stops>
+                  <Stop color="#fc8061" />
+                  <Stop color="#fc8061" offset="0.007518796992481203" />
+                  <Stop color="#cd6444" offset="0.4502447393651913" />
+                  <Stop color="#651616" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </top>
+   <bottom>
+      <Button fx:id="change" mnemonicParsing="false" onAction="#stest" prefHeight="42.0" prefWidth="81.0" stylesheets="@../styles/style1.css" text="Clients" translateY="-5.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <ListView fx:id="listItems" blendMode="MULTIPLY" prefHeight="403.0" prefWidth="600.0" style="-fx-background-color: #fcfcf1; -fx-border-color: black;" translateY="-50.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

@@ -1,0 +1,29 @@
+
+.button {
+	-fx-background-color:  linear-gradient(to bottom right,orange,pink);
+    -fx-background-radius: 80;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: 
+    linear-gradient(to bottom right,#f78361,#f54b64);
+    
+}
+
+.btn:active {
+    
+           -fx-background-color: 
+    linear-gradient(to bottom right,black,#f54b64);
+            
+        }
+        
+
+
+.text-field:disabled {
+   -fx-text-fill: #000000;
+   -fx-opacity:1.0
+}
+
+
